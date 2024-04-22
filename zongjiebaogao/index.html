@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="John Doe">
+
+
+
+
+
+<title>总结报告 | Hexo</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 7.1.1"></head>
+
+<body>
+    <script>
+        // this function is used to check current theme before page loaded.
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Dark"
+            } else {
+                pagebody.classList.remove('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Light"
+            }
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">zyy&#39;s Blog</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" target="_blank" rel="noopener" href="https://zyy981012.github.io/">首页</a>
+                
+                    <a class="menu-item" href="/guanyuwo">关于我</a>
+                
+                    <a class="menu-item" href="/wenzhangliebiao">文章列表</a>
+                
+                    <a class="menu-item" href="/zongjiebaogao">总结报告</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">zyy&#39;s Blog</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" target="_blank" rel="noopener" href="https://zyy981012.github.io/">首页</a>
+                
+                    <a class="menu-item" href="/guanyuwo">关于我</a>
+                
+                    <a class="menu-item" href="/wenzhangliebiao">文章列表</a>
+                
+                    <a class="menu-item" href="/zongjiebaogao">总结报告</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+            <div class="main">
+                <div class="container">
+    <article class="post-wrap page">
+        
+        <h2 class="post-title">总结报告</h2>
+        
+        <section class="post-content">
+            <h3 id="个人总结报告"><a href="#个人总结报告" class="headerlink" title="个人总结报告"></a>个人总结报告</h3><h4 id="博客主题及其选取原因"><a href="#博客主题及其选取原因" class="headerlink" title="博客主题及其选取原因"></a>博客主题及其选取原因</h4><p>我选择可博客主题名为Chic，我看中它的原因是他主色调为黑白，简洁又大气选择框架<br>博客的主体框架是从Hexo上下载的，Hexo的使用比较频繁且博客页面的主题也比较多。而且Hexo的相关教程很多，部署也很方便。</p>
+<h4 id="博客页面布局及其设计思路"><a href="#博客页面布局及其设计思路" class="headerlink" title="博客页面布局及其设计思路"></a>博客页面布局及其设计思路</h4><ul>
+<li><p>它的主题首页，左上角为博客名称，右上角分别有首页，关于我，文章列表，文章详情4个界面</p>
+<p>还有一个切换白天夜间模式的按钮，中间是人物头像和个人简介</p>
+<p>底下有6个图标分别对应文章，标签，知乎，ins，reddit和github</p>
+<h4 id="博客功能实现及其技术选择"><a href="#博客功能实现及其技术选择" class="headerlink" title="博客功能实现及其技术选择"></a>博客功能实现及其技术选择</h4><p>本博客主要实现了以下几个功能：</p>
+<ul>
+<li><p>一目了然的选择界面</p>
+</li>
+<li><p>日间模式与夜间模式的切换</p>
+</li>
+<li><p>跳转到各个网址的按钮</p>
+</li>
+</ul>
+<p>技术选择<br>Hexo，使用的包管理器为npm，其可以简单地安装Hexo框架及其相关插件。用markdown编写文章</p>
+<p>使用Github Page来在公网上发布博客。</p>
+<h4 id="博客制作过程中遇到的问题及其解决方法"><a href="#博客制作过程中遇到的问题及其解决方法" class="headerlink" title="博客制作过程中遇到的问题及其解决方法"></a>博客制作过程中遇到的问题及其解决方法</h4></li>
+</ul>
+<h5 id="问题一"><a href="#问题一" class="headerlink" title="问题一"></a>问题一</h5><p>之前选用了别的主题，但发现无法导入</p>
+<p>解决方法：采用本主题</p>
+<h5 id="问题二"><a href="#问题二" class="headerlink" title="问题二"></a>问题二</h5><p>第一次使用hexo，所以git，nodejs的环境配置花费较长时间</p>
+<p>解决方法：看B站视频教程一步一步配置环境</p>
+<h5 id="问题三"><a href="#问题三" class="headerlink" title="问题三"></a>问题三</h5><p>图片上传后无法显示</p>
+<p>解决方法：多次尝试修改仍旧无法显示，遂放弃</p>
+
+        </section>
+    </article>
+</div>
+
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© John Doe | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>
